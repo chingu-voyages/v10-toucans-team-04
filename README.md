@@ -2,10 +2,10 @@
 ###Build out a landing page and get it looking as close to the design (below) as possible.
 
 ![desktop image]
-(https://res.cloudinary.com/dz209s6jk/image/upload/v1561033463/Challenges/nmfs59ofpjizo6knhpsr.jpg)
+(desktop.jpg)
 
 ![mobile image]
-(https://res.cloudinary.com/dz209s6jk/image/upload/v1561033463/Challenges/b20voircjdbx6gg1cp06.jpg)
+(mobile.jpg)
 
 **Users should be able to:
 
