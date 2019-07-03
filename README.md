@@ -2,10 +2,10 @@
 ###Build out a landing page and get it looking as close to the design (below) as possible.
 
 ![desktop image]
-(desktop.jpg)
+(/desktop.jpg)
 
 ![mobile image]
-(mobile.jpg)
+(/mobile.jpg)
 
 **Users should be able to:
 
