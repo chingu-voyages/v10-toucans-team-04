@@ -2,10 +2,10 @@
 ###Build out a landing page and get it looking as close to the design (below) as possible.
 
 ![desktop image]
-(/desktop.jpg)
+(https://github.com/chingu-voyages/v10-toucans-team-04/raw/master/desktop.jpg)
 
 ![mobile image]
-(/mobile.jpg)
+(https://github.com/chingu-voyages/v10-toucans-team-04/raw/master/mobile.jpg)
 
 **Users should be able to:
 
