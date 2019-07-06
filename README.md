@@ -10,7 +10,7 @@
    -- The input field is empty
    -- The email address is not formatted correctly
 
-![desktop image](https://raw.githubusercontent.com/chingu-voyages/v10-toucans-team-04/master/desktop.jpg)
+![desktop image](https://raw.githubusercontent.com/chingu-voyages/v10-toucans-team-04/master/design/desktop.jpg)
 
-![mobile image](https://raw.githubusercontent.com/chingu-voyages/v10-toucans-team-04/master/mobile.jpg)
+![mobile image](https://raw.githubusercontent.com/chingu-voyages/v10-toucans-team-04/master/design/mobile.jpg)
 
