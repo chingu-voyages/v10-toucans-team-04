@@ -1,0 +1,45 @@
+html {
+    font-size: 10px;
+  }
+  
+  body, h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2rem;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .accordion-menu {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .slide-btn {
+    background: lightblue;
+    text-align: left;
+    border: 1px solid white;
+    padding: 2rem;
+    width: 50%;
+  }
+  
+  .slide-btn:hover, .active{
+    cursor: pointer;
+    background: lightcyan;
+    transition: .4s;
+  }
+  
+  .slide-content {
+    padding: 0 2rem;
+    background-color: white;
+    overflow: hidden;
+    max-height: 0px;
+    transition:  0.4s ease-out;
+    cursor: default
+  }
