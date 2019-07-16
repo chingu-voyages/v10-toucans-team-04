@@ -180,7 +180,52 @@ template {
   display: none;
 }
 /* END OF NORMALIZE*/
-  
+header {
+  width: 100%;
+  height: 50px;
+  background: darkgray;
+  display: flex;
+  flex-direction:  row;
+}  
+
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0,0,0,0);
+border: 0;
+}
+
+h1.logo {
+  padding: 1rem;
+align-content: flex-end;
+}
+
+.menu-toggle {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+  color: hsl(229, 8%, 60%);
+  align-content:  flex-end;
+
+}
+
+.main-nav {
+  align-content:  flex-end;
+}
+
+.main-nav-list {
+
+}
+
+
+
+
+
+
  button:focus {
     outline: none;
   }
