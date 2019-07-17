@@ -184,8 +184,6 @@ header {
   width: 100%;
   height: 50px;
   background: darkgray;
-  display: flex;
-  flex-direction:  row;
 }  
 
 .sr-only {
@@ -199,22 +197,24 @@ clip: rect(0,0,0,0);
 border: 0;
 }
 
+.nav-toggle-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 h1.logo {
-  padding: 1rem;
-align-content: flex-end;
+  margin-left: 2rem;
 }
 
 .menu-toggle {
-  display: inline-block;
-  padding: 1rem 1.5rem;
-  line-height: 1.5rem;
   color: hsl(229, 8%, 60%);
-  align-content:  flex-end;
-
+  margin-right: 2rem;
 }
 
 .main-nav {
-  align-content:  flex-end;
+
 }
 
 .main-nav-list {

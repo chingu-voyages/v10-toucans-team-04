@@ -21,19 +21,19 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   <header>
+    <div class="nav-toggle-wrapper">
+      <h1 class="logo">
+        <a href="#">
+          <img src="img/logo-bookmark.svg">
+        </a>
+      </h1>
 
-    <h1 class="logo">
-      <a href="#">
-        <img src="img/logo-bookmark.svg">
+      <a href="#main-menu" class="menu-toggle" id="main-menu-toggle" aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+
+        <img src="img/icon-hamburger.svg" aria-hidden="true">
       </a>
-    </h1>
-
-    <a href="#main-menu" class="menu-toggle" id="main-menu-toggle" aria-label="Open main menu">
-      <span class="sr-only">Open main menu</span>
-
-      <img src="img/icon-hamburger.svg" aria-hidden="true">
-    </a>
-
+    </div>
     <nav id="main-nav">
       <a href="#main-menu" class="menu-close" id="main-menu-close" aria-label="Close main menu">
         <span class="sr-only">Close main menu</span>
@@ -113,22 +113,22 @@
             We’ve got more browsers in the pipeline. Please do let us know if you’ve
             got a favourite you’d like us to prioritize.</p>
         </div>
-      
 
-      <div class="browser-select">
-        <ul class="browser-list">
-          <li class="browser-list-item">
-            <p>Chrome</p>
-          </li>
-          <li class="browser-list-item">
-            <p>Firefox</p>
-          </li>
-          <li class="browser-list-item">
-            <p>Opera</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+
+        <div class="browser-select">
+          <ul class="browser-list">
+            <li class="browser-list-item">
+              <p>Chrome</p>
+            </li>
+            <li class="browser-list-item">
+              <p>Firefox</p>
+            </li>
+            <li class="browser-list-item">
+              <p>Opera</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </article>
 
     <article class="faq">
@@ -138,42 +138,43 @@
           <p>Here are some of our FAQs. If you have any other questions you’d like
             answered please feel free to email us.</p>
         </div>
-      
 
-      <nav class="faq-nav">
-        <section class="slide-menu">
-          <button type="button" class="slide-btn">Simple Bookmarking</button>
-          <div class="slide-content">
-            <h1>Bookmark in one click</h1>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
-              over how you manage your favourite sites.</p>
-            <button>More Info</button>
-          </div>
-        </section>
 
-        <section class="slide-menu">
-          <button type="button" class="slide-btn">Speedy Searching</button>
-          <div class="slide-content">
-            <h1>Intelligent search</h1>
-            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through
-              all
-              of your bookmarks.</p>
-            <button>More Info</button>
-            <!-- <p>here is the content</p> -->
-          </div>
-        </section>
+        <nav class="faq-nav">
+          <section class="slide-menu">
+            <button type="button" class="slide-btn">Simple Bookmarking</button>
+            <div class="slide-content">
+              <h1>Bookmark in one click</h1>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
+                over how you manage your favourite sites.</p>
+              <button>More Info</button>
+            </div>
+          </section>
 
-        <section class="slide-menu">
-          <button type="button" class="slide-btn">Easy Sharing</button>
-          <div class="slide-content">
-            <h1>Share your bookmark</h1>
-            <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the
-              click of a button.</p>
-            <button>More Info</button>
-          </div>
-        </section>
-      </nav>
-    </section>
+          <section class="slide-menu">
+            <button type="button" class="slide-btn">Speedy Searching</button>
+            <div class="slide-content">
+              <h1>Intelligent search</h1>
+              <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through
+                all
+                of your bookmarks.</p>
+              <button>More Info</button>
+              <!-- <p>here is the content</p> -->
+            </div>
+          </section>
+
+          <section class="slide-menu">
+            <button type="button" class="slide-btn">Easy Sharing</button>
+            <div class="slide-content">
+              <h1>Share your bookmark</h1>
+              <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at
+                the
+                click of a button.</p>
+              <button>More Info</button>
+            </div>
+          </section>
+        </nav>
+      </section>
     </article>
   </main>
 
