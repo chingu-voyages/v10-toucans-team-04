@@ -17,6 +17,17 @@ for(let i = 0; i < accordion.length; i++) {
 
 
 
+const navMenu = document.getElementById('main-menu-toggle');
+
+navMenu.addEventListener('click', function(){
+  const menu = document.getElementById('main-nav');
+  menu.classList.toggle('hidden');
+})
+
+
+
+
+
 
 
 // //SINGLE MENU ITEM OPEN AT AT TIME

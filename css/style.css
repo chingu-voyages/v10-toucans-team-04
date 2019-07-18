@@ -1,4 +1,12 @@
-html, body, div, span, applet, object, iframe,
+html {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 10px;
+	font: inherit;
+	vertical-align: baseline;}
+
+body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -24,12 +32,17 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  
 }
 ol, ul {
 	list-style: none;
 }
-/* END OF NORMALIZE*/
+
+.hidden {
+display: none;
+}
+/* END OF RESET*/
 
 /*VARIABLES*/
 :root {
@@ -46,17 +59,29 @@ ol, ul {
 header {
   width: 100%;
   background: darkgray;
+  display: flex;
+  flex-direction: column;
 }  
 
 .nav-toggle-wrapper {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0; 
 }
 
 h1.logo {
+  padding-left: 2rem;
 }
 
-.menu-toggle {
+.nav-toggle {
+  padding-right: 2rem;
+  font-size: 1.3rem;
+  margin-left: auto;
+}
 
+.nav-toggle:hover {
+  cursor: pointer;
 }
 
 .menu-close {
@@ -64,10 +89,17 @@ h1.logo {
 }
 
 .main-nav {
+
+
 }
 
 .main-nav-list {
 
+}
+
+.main-nav-list-item {
+  border-top: 1px solid white;
+  padding: 1rem;
 }
 
 
