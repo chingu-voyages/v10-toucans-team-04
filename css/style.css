@@ -39,14 +39,11 @@ ol, ul {
 	list-style: none;
 }
 
-.hidden {
-display: none;
-}
 /* END OF RESET*/
 
 /*VARIABLES*/
 :root {
-  --very-dark-blue: hsl(229, 31%, 21%);
+  --very-dark-blue: hsla(229, 31%, 21%, 1);
   --grayish-blue: hsl(229, 8%, 60%);
   --soft-blue: hsl(231, 69%, 60%);
   --soft-red: hsl(0, 94%, 66%);
@@ -60,46 +57,56 @@ header {
   width: 100%;
   background: darkgray;
   display: flex;
-  flex-direction: column;
-}  
-
-.nav-toggle-wrapper {
-  display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 1rem 0; 
 }
 
-h1.logo {
-  padding-left: 2rem;
+.logo {
+  padding: 1rem;
+}
+
+.nav-toggle-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .nav-toggle {
-  padding-right: 2rem;
-  font-size: 1.3rem;
+  z-index: 10;
   margin-left: auto;
+  padding: 1rem;
+  
+}
+.fa-bars {
+  color: var(--very-dark-blue);
 }
 
-.nav-toggle:hover {
-  cursor: pointer;
+.fa-times {
+  color: white;
 }
 
-.menu-close {
-
-}
-
-.main-nav {
-
-
+.main-nav{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: hsla(229, 31%, 21%, .7);
+  overflow-y: hidden;
+  transition: 0.5s;
+  color: white;
 }
 
 .main-nav-list {
-
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.main-nav-list-item {
-  border-top: 1px solid white;
-  padding: 1rem;
+.open {
+  height: 100%;
 }
 
 
@@ -123,13 +130,13 @@ h1.logo {
   
   .slide-btn:hover, .active{
     cursor: pointer;
-    transition: .4s;
+    transition: .2s;
   }
   
   .slide-content {
     padding: 0 2rem;    
     overflow: hidden;
     max-height: 0px;
-    transition:  0.4s ease-out;
+    transition:  0.2s ease-out;
     cursor: default
   }
