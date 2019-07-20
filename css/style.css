@@ -252,3 +252,19 @@ h1.logo {
     transition:  0.4s ease-out;
     cursor: default
   }
+
+  /* NAVBAR */
+  .login-btn {
+    border-radius: 2px;
+    color: white;
+    background-color: red;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .navbar {
+    background-color: white
+  }
+  .top-navbar {
+    padding-left: 10rem;
+    padding-right: 10rem 
+  }
