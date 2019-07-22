@@ -137,37 +137,32 @@
       </section>
     </article> -->
   <section id="features">
-    <div class="container-fluid">
-      <h2>Features</h2>
-      <div class="row">
-        <p id="feature-text">Our aim is to make it quick and easy for you to access your favourite websites.
-          Your bookmarks sync between your devices so you can access them on the go.</p>
-        <div class="features-nav">
-          <button class=" btn btn-lg feature-nav-item" onclick="">Simple Bookmarking</button>
-          <button class=" btn btn-lg feature-nav-item" onclick="">Speedy Searching</button>
-          <button class=" btn btn-lg feature-nav-item" onclick="">Easy Sharing</button>
-        </div>
-      </div>
-
-      <!-- <nav class="features-nav">
-        <ul>
-          <li>Simple Bookmarking</li>
-          <li>Speedy Searching</li>
-          <li>Easy Sharing</li>
-        </ul>
-      </nav> -->
-      <div class="row">
-        <div class="col-lg-5">
-          <img src="images/illustration-features-tab-1.png">
-        </div>
-        <div class="col-lg-7">
-          <h3>Bookmark in one click</h3>
-          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
-            gives you complete control over how you manage your favourite sites.</p>
-          <button>More Info</button>
-        </div>
-      </div>
+    <h2>Features</h2>
+    <p id="feature-text">Our aim is to make it quick and easy for you to access your favourite websites.
+      Your bookmarks sync between your devices so you can access them on the go.</p>
+    <div class="tab">
+      <button class="tab-links" onclick="changeTab(event,'simple-bookmarking')">Simple Bookmarking</button>
+      <button class="tab-links" onclick="changeTab(event,'speedy-searching')">Speedy Searching</button>
+      <button class="tab-links" onclick="changeTab(event,'easy-sharing')">Easy Sharing</button>
     </div>
+
+    <div style="display: block" id="simple-bookmarking" class="tabcontent">
+      <h3>Bookmark in one click</h3>
+      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+        gives you complete control over how you manage your favourite sites.</p>
+    </div>
+    <div id="speedy-searching" class="tabcontent">
+      <h3>Speedy Searching</h3>
+      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+        gives you complete control over how you manage your favourite sites.</p>
+    </div>
+    <div id="easy-sharing" class="tabcontent">
+      <h3>Easy sharing</h3>
+      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+        gives you complete control over how you manage your favourite sites.</p>
+    </div>
+
+
 
   </section>
 

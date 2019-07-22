@@ -1,11 +1,20 @@
 // TABBED FEATURES MENU
-function changeTab(feature) {
-  var x = document.getElementsByClassName('column');
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = 'none';
+function changeTab(event, feature) {
+  let i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName('tabcontent');
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = 'none';
   }
-  document.getElementById(feature).style.display = 'block'
+  tablinks = document.getElementsByClassName('tab-links');
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(' active', '');
+  }
+  document.getElementById(feature).style.display = 'block';
+  event.currentTarget.className += ' active';
 }
+
+document.getElementById('simple-bookmarking').click();
 
 
 

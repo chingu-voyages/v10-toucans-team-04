@@ -23,6 +23,7 @@ h1 {
 
   margin: 0.67em 0;
 }
+
 h2 {
   font-size: 3em;
   font-family: 'Rubik Medium', sans-serif, ;
@@ -30,6 +31,7 @@ h2 {
   margin: 0.67em 0;
 
 }
+
 p {
   font-size: 18px;
   color: gray;
@@ -312,8 +314,9 @@ button:focus {
   font-size: 10px;
   font-family: 'Rubik', sans-serif;
 
-    /* color: white; */
+  /* color: white; */
 }
+
 a.nav-link {
   background-color: none
 }
@@ -324,21 +327,23 @@ a.nav-link {
 
 #login-btn {
   color: white;
-  background-color:hsl(0, 94%, 66%);
+  background-color: hsl(0, 94%, 66%);
   border-radius: 7px;
   border-style: none;
   box-shadow: 1px 2px 5px #888888;
 
-  
+
 }
 
 /* HERO SECTION */
 section.hero-section {
   padding: 0 15%
 }
+
 .left-header-col {
   text-align: left
 }
+
 .browser-btn {
   padding: 3% 7%;
   margin: 6px;
@@ -348,5 +353,57 @@ section.hero-section {
 
 
 /* FEATURE SECTION */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab-button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 
 
+.feature-nav-item {
+  margin: 15px;
+  font-size: 20px
+}
+
+section#features {
+  padding: 0 15%;
+  text-align: center;
+
+
+}
+
+#features-image {
+  max-width: 100%;
+  text-align: center;
+}
+
+.right-feature-col {
+  text-align: left
+}
