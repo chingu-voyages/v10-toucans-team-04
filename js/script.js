@@ -15,15 +15,31 @@ for(let i = 0; i < accordion.length; i++) {
 
 //MOBILE MENU OVERLAY
 const navMenu = document.getElementById('main-menu-toggle');
-navMenu.addEventListener('click', function(){
+  navMenu.addEventListener('click', function(){
   const menu = document.getElementById('main-nav');
+  const navLogo = document.querySelectorAll('.st0, .st1');
+  const iconSwapActive = document.getElementById('menu-icon');
+  
   menu.classList.toggle('open');
-})
-const iconSwap = document.getElementById('menu-icon');
-iconSwap.addEventListener('click', function (){
-  if(this.classList.contains('fa-bars')){
-    this.classList.replace('fa-bars', 'fa-times');
+
+  navLogo.forEach((e) => {
+    e.classList.toggle('nav-logo-active');
+  } );
+
+  if(iconSwapActive.classList.contains('fa-bars')){
+    iconSwapActive.classList.replace('fa-bars', 'fa-times');
   } else {
-    this.classList.replace('fa-times', 'fa-bars');
+    iconSwapActive.classList.replace('fa-times', 'fa-bars');
   };
 });
+
+// const iconSwap = document.getElementById('menu-icon');
+// iconSwap.addEventListener('click', () => {
+//   const iconSwapActive = document.getElementById('menu-icon');
+
+//   if(iconSwapActive.classList.contains('fa-bars')){
+//     iconSwapActive.classList.replace('fa-bars', 'fa-times');
+//   } else {
+//     iconSwapActive.classList.replace('fa-times', 'fa-bars');
+//   };
+// });

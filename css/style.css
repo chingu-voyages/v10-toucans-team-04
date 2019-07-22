@@ -55,26 +55,38 @@ ol, ul {
 
 header {
   width: 100%;
-  background: darkgray;
+  background: white;
   display: flex;
   flex-direction: row;
 }
 
 .logo {
-  padding: 1rem;
+  padding: 1.3rem 1.5rem;
+  z-index: 10;
+}
+.st0 {
+  fill: var(--very-dark-blue);
+}
+.st1 {
+  fill: var(--soft-blue);
+}
+
+.nav-logo-active {
+  fill: white;
 }
 
 .nav-toggle-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
+
 }
 
 .nav-toggle {
   z-index: 10;
-  margin-left: auto;
-  padding: 1rem;
-  
+  margin-left: auto;  
+  padding-right: 3rem ;
+
 }
 .fa-bars {
   color: var(--very-dark-blue);
