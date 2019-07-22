@@ -26,10 +26,11 @@ const navMenu = document.getElementById('main-menu-toggle');
     e.classList.toggle('nav-logo-active');
   } );
 
-  if(iconSwapActive.classList.contains('fa-bars')){
-    iconSwapActive.classList.replace('fa-bars', 'fa-times');
+  if(menu.classList.contains('open')){
+    console.log('working');
+    iconSwapActive.src = 'img/icon-close.svg';  
   } else {
-    iconSwapActive.classList.replace('fa-times', 'fa-bars');
+    iconSwapActive.src = 'img/icon-hamburger.svg';
   };
 });
 

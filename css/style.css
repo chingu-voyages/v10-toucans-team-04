@@ -33,7 +33,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  
 }
 ol, ul {
 	list-style: none;
@@ -58,6 +57,7 @@ header {
   background: white;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .logo {
@@ -88,13 +88,6 @@ header {
   padding-right: 3rem ;
 
 }
-.fa-bars {
-  color: var(--very-dark-blue);
-}
-
-.fa-times {
-  color: white;
-}
 
 .main-nav{
   height: 0%;
@@ -121,6 +114,12 @@ header {
   height: 100%;
 }
 
+.hero-figure {
+
+}
+.hero-image {
+
+}
 
 
 
