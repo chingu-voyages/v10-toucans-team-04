@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -53,11 +54,9 @@ ol, ul {
 
 
 header {
-  width: 100%;
   background: white;
   display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  margin-bottom: 3rem;
 }
 
 .logo {
@@ -114,11 +113,36 @@ header {
   height: 100%;
 }
 
-.hero-figure {
+main {
+  text-align: center;
+}
+
+.hero-section {
 
 }
-.hero-image {
 
+.hero-figure {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  z-index: -1;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.background-shape {
+  position: absolute;
+  z-index: -2;
+  width: 80%;
+  height: 14rem;
+  right: 0;
+  top: 22%;
+  background-color: var(--soft-blue);
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
 }
 
 
