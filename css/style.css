@@ -1,12 +1,5 @@
-html {
-  margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 10px;
-	font: inherit;
-	vertical-align: baseline;}
 
-body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,9 +15,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 10px;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  line-height: 1;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,8 +26,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-  line-height: 1;
   max-width: 100%;
+  font-family: 'Rubik', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -47,6 +41,8 @@ ol, ul {
   --grayish-blue: hsl(229, 8%, 60%);
   --soft-blue: hsl(231, 69%, 60%);
   --soft-red: hsl(0, 94%, 66%);
+  
+  
 
 }
 
@@ -56,7 +52,7 @@ ol, ul {
 header {
   background: white;
   display: flex;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -84,8 +80,7 @@ header {
 .nav-toggle {
   z-index: 10;
   margin-left: auto;  
-  padding-right: 3rem ;
-
+  padding-right: 2rem ;
 }
 
 .main-nav{
@@ -115,6 +110,7 @@ header {
 
 main {
   text-align: center;
+  padding: 0 2rem;
 }
 
 .hero-section {
@@ -122,7 +118,7 @@ main {
 }
 
 .hero-figure {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
 }
@@ -133,16 +129,59 @@ main {
   margin: 0 auto;
 }
 
-.background-shape {
+.background-shape-right {
   position: absolute;
   z-index: -2;
   width: 80%;
-  height: 14rem;
+  height: 20%;
   right: 0;
-  top: 22%;
+  margin-top: 3rem;
   background-color: var(--soft-blue);
   border-top-left-radius: 5rem;
   border-bottom-left-radius: 5rem;
+}
+
+ .hero-text h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.hero-btn-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.hero-btn {
+  padding: 1rem;
+  background-color: lightgray;
+  border: none;
+  border-radius: .2rem;
+  width: 8rem;
+  font-weight: 500;
+}
+
+.hero-btn-list-item:first-child button{
+  background-color: var(--soft-blue);
+  color: white;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
 }
 
 
