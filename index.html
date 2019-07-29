@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
   <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -68,7 +68,7 @@
         <li class="main-nav-list-item">Features</li>
         <li class="main-nav-list-item">Pricing</li>
         <li class="main-nav-list-item">Contact</li>
-        <li class="main-nav-list-item">Login</li>
+        <li class="main-nav-list-item"><button>Login</button></li>
       </ul>
 
     </nav>
@@ -110,12 +110,12 @@
 
         <nav class="features-nav">
           <ul class="features-nav-list">
-            <li class="features-nav-list-item feature-nav-active">Simple Bookmarking</li>
-            <div class="red-btm-border"></div>
-            <li class="features-nav-list-item">Speedy Searching</li>
-            <div class="red-btm-border"></div>
-            <li class="features-nav-list-item">Easy Sharing</li>
-            <div class="red-btm-border"></div>
+            <li class="features-nav-list-item feature-nav-active"><a>Simple Bookmarking</a></li>
+            <div id="simple-bookmarking" class="red-btm-border"></div>
+            <li class="features-nav-list-item"><a>Speedy Searches</a></li>
+            <div id="simple-bookmarking"></div>
+            <li class="features-nav-list-item"><a>Easy Sharing</a></li>
+            <div id="simple-bookmarking"></div>
           </ul>
         </nav>
 
@@ -124,11 +124,10 @@
             <img src="/img/illustration-features-tab-1.svg" class="active-feature-img" id="active-feature-image">
             <div class="background-shape-left"></div>
           </figure>
-          <div class="column">
-            <h3>Bookmark in one click</h3>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+          <div class="active-feature-text">
+            <h3 id="active-class-heading">Bookmark in one click</h3>
+            <p id="active-class-text">Organize your bookmarks however you like. Our simple drag-and-drop interface
               gives you complete control over how you manage your favourite sites.</p>
-            <button>More Info</button>
           </div>
         </div>
       </section>
@@ -147,13 +146,22 @@
         <div class="browser-select">
           <ul class="browser-list">
             <li class="browser-list-item">
-              <p>Chrome</p>
+              <img src="img/logo-chrome.svg">
+              <h4>Chrome</h4>
+              <p>minimum version 64</p>
+              <button>Add & install extentsion</button>
             </li>
             <li class="browser-list-item">
-              <p>Firefox</p>
+              <img src="img/logo-firefox.svg">
+              <h4>Firefox</h4>
+              <p>minimum version 55</p>
+              <button>Add & install extentsion</button>
             </li>
             <li class="browser-list-item">
-              <p>Opera</p>
+              <img src="img/logo-opera.svg">
+              <h4>Opera</h4>
+              <p>minimum version 46</p>
+              <button>Add & install extentsion</button>
             </li>
           </ul>
         </div>
@@ -224,7 +232,7 @@
     </nav>
 
     <p class="attribution">
-      Desinged by Frontend Mentor</a>.
+      Desinged by Frontend Mentor</li>.
       Coded by V10 Toucans Team-04</a>.
     </p>
   </footer>

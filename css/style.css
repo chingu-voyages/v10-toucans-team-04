@@ -39,19 +39,23 @@ ol, ul {
 	list-style: none;
 }
 
+button, a, input {
+  cursor: pointer;
+}
+
+
+
+
 /* END OF RESET*/
 
 
 
 /*VARIABLES*/
 :root {
-  --very-dark-blue: hsla(229, 31%, 21%, 1);
+  --very-dark-blue: hsla(229, 31%, 21%);
   --grayish-blue: hsl(229, 8%, 60%);
   --soft-blue: hsl(231, 69%, 60%);
   --soft-red: hsl(0, 94%, 66%);
-  
-  
-
 }
 
 /*END VARIABLES*/
@@ -92,6 +96,10 @@ header {
   padding-right: 2rem ;
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 .main-nav{
   height: 0%;
   width: 100%;
@@ -99,7 +107,7 @@ header {
   z-index: 1;
   left: 0;
   top: 0;
-  background: hsla(229, 31%, 21%, .7);
+  background: var(--very-dark-blue);
   overflow-y: hidden;
   transition: all 0.5s ease-in-out;
   color: white;
@@ -112,6 +120,9 @@ header {
   width: 80%;
   text-align: center;
   margin: 3rem auto 5rem auto;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .main-nav-list-item {
@@ -119,16 +130,34 @@ header {
   padding: 2rem 0;
 }
 
+.main-nav-list-item button {
+  border: 1px solid white;
+  background: none;
+  border-radius: .5rem;
+  margin: 1rem auto 1rem auto;
+  padding: 2rem 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  color:white;
+  cursor: pointer;
+}
+
+.main-nav-list-item button:hover {
+  background: hsla(0, 0%, 100%, .9);
+  color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
 .open {
   height: 100%;
-  opacity: 1;
-
+  opacity: .9;
 }
 
 .hero-section {
   text-align: center;
   padding: 0 2rem;
-
 }
 
 .hero-figure {
@@ -209,16 +238,22 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.features { 
+  margin-bottom: 10rem;
+}
+
 .features-nav {
   margin-bottom: 7rem;
 }
 
-.features-nav-list-item {
+.features-nav-list-item a {
+  display: inline-block;
+  width: 100%;
   border-top: solid 1px hsl(229, 8%, 60%, .2);
   padding: 2rem 0;
 }
 
-.features-nav-list-item:last-child {
+.features-nav-list-item:last-of-type {
   border-bottom: solid 1px hsl(229, 8%, 60%, .2);
 } 
 
@@ -228,6 +263,7 @@ h3 {
 
 .red-btm-border {
   position: relative;
+  border-top: none;
   border-bottom: 2px solid var(--soft-red) ;
   bottom: 0;
   width: 50%;
@@ -236,13 +272,12 @@ h3 {
 
 .active-feature {
   text-align: center;
-  padding: 0 2rem; 
-  margin-bottom: 2rem;
+  padding: 0 1rem; 
 
 }
 
 .active-feature-figure {
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
   display: flex;
   flex-direction: column;
 
@@ -258,7 +293,7 @@ h3 {
   position: absolute;
   z-index: -2;
   width: 80%;
-  height: 50vw;
+  height: 60vw;
   left: 0;
   margin-top: 3rem;
   background-color: var(--soft-blue);
@@ -266,8 +301,18 @@ h3 {
   border-bottom-right-radius: 10rem;
 }
 
+.download {
+  margin-bottom: 10rem;
+}
 
-
+.browser-list-item {
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px  hsla(229, 31%, 21%, .1);
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
+  width: 80%;
+}
 
 
  button:focus {

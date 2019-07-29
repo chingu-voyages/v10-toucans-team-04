@@ -19,6 +19,7 @@ const navMenu = document.getElementById('main-menu-toggle');
   const menu = document.getElementById('main-nav');
   const navLogo = document.querySelectorAll('.st0, .st1');
   const iconSwapActive = document.getElementById('menu-icon');
+  const bodyScroll = document.getElementById('body'); 
   
   menu.classList.toggle('open');
 
@@ -27,20 +28,10 @@ const navMenu = document.getElementById('main-menu-toggle');
   } );
 
   if(menu.classList.contains('open')){
-    console.log('working');
-    iconSwapActive.src = 'img/icon-close.svg';  
+    iconSwapActive.src = 'img/icon-close.svg';
+    bodyScroll.classList.add('lock-scroll');  
   } else {
     iconSwapActive.src = 'img/icon-hamburger.svg';
-  };
+    bodyScroll.classList.remove('lock-scroll');
+  }
 });
-
-// const iconSwap = document.getElementById('menu-icon');
-// iconSwap.addEventListener('click', () => {
-//   const iconSwapActive = document.getElementById('menu-icon');
-
-//   if(iconSwapActive.classList.contains('fa-bars')){
-//     iconSwapActive.classList.replace('fa-bars', 'fa-times');
-//   } else {
-//     iconSwapActive.classList.replace('fa-times', 'fa-bars');
-//   };
-// });
