@@ -367,6 +367,7 @@ h3 {
   }
   
    .faq-nav {
+     margin-bottom: 4rem;
   }
 
   .slide-btn {
@@ -383,10 +384,13 @@ h3 {
     font-size: 1.6rem;
     font-weight: 500;
   }
+
+  .slide-btn h5 {  
+    font-size: 1.4rem;
+  }
   
   .slide-btn:hover {
     cursor: pointer;
-    
   }
 
   .active {
@@ -402,7 +406,58 @@ h3 {
     cursor: default;
     text-align: left;
     line-height: 1.5;
-
   }
 
+  .more-info-btn button {
+    padding: 1.4rem 1rem;
+    background: var(--soft-blue);
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .contact-us {
+    background-color: var(--soft-blue);
+    padding: 4rem 3rem;
+    text-align: center;
+    color: white;
+  }
+
+  .contact-us h5 {
+    font-size: 1.4rem;
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-us h4 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-us-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .email-input {
+    padding: 2rem 1em;
+    border-radius: .75rem;
+    border: 0;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
   
+
+  .submit-btn{
+    padding: 2rem 1em;
+    border-radius: .75rem;
+    border: 0;
+    background: var(--soft-red);
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+  }
