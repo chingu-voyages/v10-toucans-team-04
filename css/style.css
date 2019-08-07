@@ -536,6 +536,10 @@ button:focus {
     text-align: center;
 }
 
+input.error {
+    border: 2px solid red;
+}
+
 .submit-btn {
     padding: 2rem 1em;
     border-radius: .75rem;
