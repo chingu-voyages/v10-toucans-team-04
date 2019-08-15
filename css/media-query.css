@@ -1,0 +1,101 @@
+@media (min-width: 676px) {
+    body {
+        padding: 0 10rem;
+    }
+    .logo {
+        padding: 1.3rem 1.5rem;
+    }
+    .nav-logo-active {
+        display: none;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .lock-scroll {
+        display: none;
+    }
+    header .nav-toggle-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    header .main-nav {
+        display: flex;
+        margin-left: auto;
+        flex-direction: row;
+        height: 100px;
+        background: none;
+        overflow-y: auto;
+        transition: none;
+        color: var(--very-dark-blue);
+        opacity: 1;
+        position: unset;
+    }
+    .main-nav .main-nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .main-nav-list .main-nav-list-item {
+        padding: 0 2.5rem;
+        color: var(--very-dark-blue);
+    }
+    .main-nav-list .main-nav-list-item button {
+        background: var(--soft-red);
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: .75rem 2rem;
+        font-size: 1.2rem;
+        box-shadow: 3px 3px 5px hsla(229, 31%, 21%, .5);
+    }
+    .main-nav-list-item button:hover {
+        color: var(--very-dark-blue);
+        cursor: pointer;
+    }
+    .social-list {
+        display: none;
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 5rem;
+    }
+    .hero-text {
+        width: 37%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+    .hero-btn-list {
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .hero-btn {
+        margin-left: 0;
+    }
+    .hero-figure {
+        margin-bottom: 8rem;
+    }
+    .hero-image {
+        z-index: -1;
+        width: 80%;
+        justify-content: flex-end;
+    }
+    .background-shape-right {
+        position: absolute;
+        z-index: -2;
+        width: 30%;
+        height: 20vw;
+        right: 0;
+        margin-top: 12rem;
+        background-color: var(--soft-blue);
+        border-top-left-radius: 10rem;
+        border-bottom-left-radius: 10rem;
+    }
+}

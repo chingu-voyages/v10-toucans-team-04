@@ -143,7 +143,7 @@ input {
 }
 
 
-/*END VARIABLES*/
+/*MOBILE*/
 
 header {
     background: white;
@@ -349,12 +349,12 @@ h3 {
 .features-nav-list-item a {
     display: inline-block;
     width: 100%;
-    border-top: solid 1px hsl(229, 8%, 60%, .2);
+    border-bottom: solid 1px hsl(229, 8%, 60%, .2);
     padding: 2rem 0;
 }
 
-.features-nav-list-item:last-of-type {
-    border-bottom: solid 1px hsl(229, 8%, 60%, .2);
+.features-nav-list-item:first-of-type {
+    border-top: solid 1px hsl(229, 8%, 60%, .2);
 }
 
 .feature-nav-active {
@@ -582,6 +582,4 @@ footer .st1 {
 }
 
 
-/* footer svg {
-    display: inline;
-} */
+/*MEDIA QUERIES*/
