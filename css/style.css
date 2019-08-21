@@ -1,886 +1,921 @@
-                                                                                html,
-                                                                            body,
-                                                                            div,
-                                                                            span,
-                                                                            applet,
-                                                                            object,
-                                                                            iframe,
-                                                                            h1,
-                                                                            h2,
-                                                                            h3,
-                                                                            h4,
-                                                                            h5,
-                                                                            h6,
-                                                                            p,
-                                                                            blockquote,
-                                                                            pre,
-                                                                            a,
-                                                                            abbr,
-                                                                            acronym,
-                                                                            address,
-                                                                            big,
-                                                                            cite,
-                                                                            code,
-                                                                            del,
-                                                                            dfn,
-                                                                            em,
-                                                                            img,
-                                                                            ins,
-                                                                            kbd,
-                                                                            q,
-                                                                            s,
-                                                                            samp,
-                                                                            small,
-                                                                            strike,
-                                                                            strong,
-                                                                            sub,
-                                                                            sup,
-                                                                            tt,
-                                                                            var,
-                                                                            b,
-                                                                            u,
-                                                                            i,
-                                                                            center,
-                                                                            dl,
-                                                                            dt,
-                                                                            dd,
-                                                                            ol,
-                                                                            ul,
-                                                                            li,
-                                                                            fieldset,
-                                                                            form,
-                                                                            label,
-                                                                            legend,
-                                                                            table,
-                                                                            caption,
-                                                                            tbody,
-                                                                            tfoot,
-                                                                            thead,
-                                                                            tr,
-                                                                            th,
-                                                                            td,
-                                                                            article,
-                                                                            aside,
-                                                                            canvas,
-                                                                            details,
-                                                                            embed,
-                                                                            figure,
-                                                                            figcaption,
-                                                                            footer,
-                                                                            header,
-                                                                            hgroup,
-                                                                            menu,
-                                                                            nav,
-                                                                            output,
-                                                                            ruby,
-                                                                            section,
-                                                                            summary,
-                                                                            time,
-                                                                            mark,
-                                                                            audio,
-                                                                            video {
-                                                                                margin: 0;
-                                                                                padding: 0;
-                                                                                border: 0;
-                                                                                font: inherit;
-                                                                                font-size: 100%;
-                                                                                font-family: 'Rubik', sans-serif;
-                                                                                vertical-align: baseline;
-                                                                            }
-                                                                            /* HTML5 display-role reset for older browsers */
-                                                                            
-                                                                            article,
-                                                                            aside,
-                                                                            details,
-                                                                            figcaption,
-                                                                            figure,
-                                                                            footer,
-                                                                            header,
-                                                                            hgroup,
-                                                                            menu,
-                                                                            nav,
-                                                                            section {
-                                                                                display: block;
-                                                                            }
-                                                                            
-                                                                            html {
-                                                                                font-size: 62.5%;
-                                                                                margin: 0;
-                                                                                padding: 0;
-                                                                            }
-                                                                            
-                                                                            body {
-                                                                                max-width: 100%;
-                                                                                font-size: 16px;
-                                                                                font-size: 1.6rem;
-                                                                                color: var(--grayish-blue);
-                                                                            }
-                                                                            
-                                                                            ol,
-                                                                            ul {
-                                                                                list-style: none;
-                                                                            }
-                                                                            
-                                                                            button,
-                                                                            a,
-                                                                            input {
-                                                                                cursor: pointer;
-                                                                            }
-                                                                            /* END OF RESET*/
-                                                                            /*VARIABLES*/
-                                                                            
-                                                                             :root {
-                                                                                --very-dark-blue: hsla(229, 31%, 21%);
-                                                                                --grayish-blue: hsl(229, 8%, 60%);
-                                                                                --soft-blue: hsl(231, 69%, 60%);
-                                                                                --soft-red: hsl(0, 94%, 66%);
-                                                                            }
-                                                                            /*GLOBAL STYLES*/
-                                                                            
-                                                                            header {
-                                                                                background: white;
-                                                                                display: flex;
-                                                                                padding: 2rem;
-                                                                                margin-bottom: 1rem;
-                                                                            }
-                                                                            
-                                                                            .logo {
-                                                                                z-index: 10;
-                                                                            }
-                                                                            
-                                                                            .st0 {
-                                                                                fill: var(--very-dark-blue);
-                                                                            }
-                                                                            
-                                                                            .st1 {
-                                                                                fill: var(--soft-blue);
-                                                                            }
-                                                                            
-                                                                            footer p {
-                                                                                margin-bottom: 0;
-                                                                                margin-top: 3rem;
-                                                                                font-size: 1rem;
-                                                                                color: rgba(86, 102, 167, 0.5);
-                                                                            }
-                                                                            
-                                                                            footer .st0 {
-                                                                                fill: white;
-                                                                            }
-                                                                            
-                                                                            footer .st1 {
-                                                                                fill: var(--soft-blue);
-                                                                            }
-                                                                            
-                                                                            .footer-nav {
-                                                                                margin-top: 2rem;
-                                                                            }
-                                                                            
-                                                                            .footer-nav-list-item {
-                                                                                padding: 1.5rem 0;
-                                                                                text-transform: uppercase;
-                                                                                color: white;
-                                                                            }
-                                                                            /*MOBILE STYLES*/
-                                                                            
-                                                                            @media (max-width: 800px) {
-                                                                                .nav-logo-active {
-                                                                                    fill: white;
-                                                                                    transition: all .3s ease-in-out;
-                                                                                }
-                                                                                .nav-toggle-wrapper {
-                                                                                    width: 100%;
-                                                                                    display: flex;
-                                                                                    align-items: center;
-                                                                                }
-                                                                                .nav-toggle {
-                                                                                    z-index: 10;
-                                                                                    margin-left: auto;
-                                                                                    padding-right: 2rem;
-                                                                                }
-                                                                                .lock-scroll {
-                                                                                    overflow: hidden;
-                                                                                }
-                                                                                .main-nav {
-                                                                                    height: 0%;
-                                                                                    width: 100%;
-                                                                                    position: fixed;
-                                                                                    z-index: 1;
-                                                                                    left: 0;
-                                                                                    top: 0;
-                                                                                    background: var(--very-dark-blue);
-                                                                                    overflow-y: hidden;
-                                                                                    transition: all 0.5s ease-in-out;
-                                                                                    color: white;
-                                                                                    opacity: 0;
-                                                                                }
-                                                                                .main-nav-list {
-                                                                                    position: relative;
-                                                                                    top: 10%;
-                                                                                    width: 80%;
-                                                                                    text-align: center;
-                                                                                    margin: 3rem auto 5rem auto;
-                                                                                    text-transform: uppercase;
-                                                                                    font-size: 2rem;
-                                                                                    font-weight: 500;
-                                                                                }
-                                                                                .main-nav-list-item {
-                                                                                    border-top: solid white .5px;
-                                                                                    padding: 2rem 0;
-                                                                                }
-                                                                                .main-nav-list-item button {
-                                                                                    border: 2px solid white;
-                                                                                    background: none;
-                                                                                    border-radius: .5rem;
-                                                                                    margin: 1rem auto 5rem auto;
-                                                                                    padding: 2rem 0;
-                                                                                    width: 100%;
-                                                                                    text-transform: uppercase;
-                                                                                    font-size: 2rem;
-                                                                                    font-weight: 500;
-                                                                                    color: white;
-                                                                                    cursor: pointer;
-                                                                                }
-                                                                                .main-nav-list-item button:hover {
-                                                                                    background: hsla(0, 0%, 100%, .9);
-                                                                                    color: var(--very-dark-blue);
-                                                                                    cursor: pointer;
-                                                                                }
-                                                                                .social-list {
-                                                                                    display: flex;
-                                                                                    flex-direction: row;
-                                                                                    justify-content: center;
-                                                                                    flex-grow: 1;
-                                                                                    align-items: center;
-                                                                                    transition: all 0.5s ease-in-out;
-                                                                                }
-                                                                                .social-list-item {
-                                                                                    padding: 2rem;
-                                                                                }
-                                                                                .open {
-                                                                                    height: 100%;
-                                                                                    opacity: .9;
-                                                                                }
-                                                                                .hero-section {
-                                                                                    text-align: center;
-                                                                                    padding: 0 2rem;
-                                                                                }
-                                                                                .hero-figure {
-                                                                                    margin-bottom: 8rem;
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                }
-                                                                                .hero-image {
-                                                                                    z-index: -1;
-                                                                                    width: 100%;
-                                                                                    margin: 0 auto;
-                                                                                }
-                                                                                .background-shape-right {
-                                                                                    position: absolute;
-                                                                                    z-index: -2;
-                                                                                    width: 80%;
-                                                                                    height: 60vw;
-                                                                                    right: 0;
-                                                                                    margin-top: 3rem;
-                                                                                    background-color: var(--soft-blue);
-                                                                                    border-top-left-radius: 10rem;
-                                                                                    border-bottom-left-radius: 10rem;
-                                                                                }
-                                                                                .hero-text h1 {
-                                                                                    font-weight: 500;
-                                                                                    font-size: 3rem;
-                                                                                    color: var(--very-dark-blue);
-                                                                                    margin-bottom: 2rem;
-                                                                                }
-                                                                                main {
-                                                                                    text-align: center;
-                                                                                    margin: 0 2rem;
-                                                                                }
-                                                                                article {
-                                                                                    margin-bottom: 5rem;
-                                                                                }
-                                                                                p {
-                                                                                    font-weight: 400;
-                                                                                    color: var(--grayish-blue);
-                                                                                    line-height: 1.75;
-                                                                                    margin-bottom: 4rem;
-                                                                                }
-                                                                                .hero-btn-list {
-                                                                                    display: flex;
-                                                                                    flex-direction: row;
-                                                                                    justify-content: center;
-                                                                                    padding: 0 2rem;
-                                                                                    margin-bottom: 10rem;
-                                                                                }
-                                                                                .hero-btn {
-                                                                                    padding: 1.5rem;
-                                                                                    margin: 0 1rem;
-                                                                                    background-color: lightgray;
-                                                                                    border: none;
-                                                                                    border-radius: .4rem;
-                                                                                    width: 14rem;
-                                                                                    font-weight: 500;
-                                                                                    box-shadow: 3px 3px 5px hsla(229, 31%, 21%, .5);
-                                                                                    ;
-                                                                                }
-                                                                                .hero-btn-list-item:first-child button {
-                                                                                    background-color: var(--soft-blue);
-                                                                                    color: white;
-                                                                                }
-                                                                                h3 {
-                                                                                    font-weight: 500;
-                                                                                    font-size: 2.5rem;
-                                                                                    color: var(--very-dark-blue);
-                                                                                    margin-bottom: 1rem;
-                                                                                }
-                                                                                .features {
-                                                                                    margin-bottom: 10rem;
-                                                                                }
-                                                                                .features-nav {
-                                                                                    margin-bottom: 7rem;
-                                                                                }
-                                                                                .features-nav-list-item a {
-                                                                                    display: inline-block;
-                                                                                    width: 100%;
-                                                                                    border-bottom: solid 1px hsl(229, 8%, 60%, .2);
-                                                                                    padding: 2rem 0;
-                                                                                }
-                                                                                .features-nav-list-item:first-of-type {
-                                                                                    border-top: solid 1px hsl(229, 8%, 60%, .2);
-                                                                                }
-                                                                                .feature-nav-active {
-                                                                                    color: var(--very-dark-blue);
-                                                                                }
-                                                                                .red-btm-border {
-                                                                                    position: relative;
-                                                                                    border-top: none;
-                                                                                    border-bottom: 2px solid var(--soft-red);
-                                                                                    bottom: 0;
-                                                                                }
-                                                                                .active-feature {
-                                                                                    text-align: center;
-                                                                                    padding: 0 1rem;
-                                                                                }
-                                                                                .active-feature-figure {
-                                                                                    margin-bottom: 12rem;
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                }
-                                                                                .active-feature-figure img {
-                                                                                    width: 100%;
-                                                                                    margin: 0 auto;
-                                                                                }
-                                                                                .background-shape-left {
-                                                                                    position: absolute;
-                                                                                    z-index: -2;
-                                                                                    width: 80%;
-                                                                                    height: 60vw;
-                                                                                    left: 0;
-                                                                                    margin-top: 3rem;
-                                                                                    background-color: var(--soft-blue);
-                                                                                    border-top-right-radius: 10rem;
-                                                                                    border-bottom-right-radius: 10rem;
-                                                                                }
-                                                                                .download {
-                                                                                    margin-bottom: 10rem;
-                                                                                }
-                                                                                .browser-select {
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                    align-items: center;
-                                                                                }
-                                                                                .browser-list {
-                                                                                    width: 90%;
-                                                                                }
-                                                                                .browser-list-item {
-                                                                                    text-align: center;
-                                                                                    border-radius: 1rem;
-                                                                                    box-shadow: 0px 2px 5px hsla(229, 31%, 21%, .1);
-                                                                                    padding: 2rem 0;
-                                                                                    margin-bottom: 4rem;
-                                                                                }
-                                                                                .browser-list-item img {
-                                                                                    margin: 2rem 0;
-                                                                                }
-                                                                                .bg-dots {
-                                                                                    width: 100%;
-                                                                                }
-                                                                                .browser-list-item h4 {
-                                                                                    font-size: 2rem;
-                                                                                    font-weight: 500;
-                                                                                    color: var(--very-dark-blue);
-                                                                                }
-                                                                                .browser-list-item button {
-                                                                                    padding: 2rem 2rem;
-                                                                                    margin: 0 2rem;
-                                                                                    width: 80%;
-                                                                                    background: var(--soft-blue);
-                                                                                    font-size: 1.6rem;
-                                                                                    color: white;
-                                                                                    font-weight: 500;
-                                                                                    border-radius: 1rem;
-                                                                                }
-                                                                                button:focus {
-                                                                                    outline: none;
-                                                                                }
-                                                                                .faq-nav {
-                                                                                    margin-bottom: 4rem;
-                                                                                }
-                                                                                .slide-btn {
-                                                                                    width: 90%;
-                                                                                    text-align: left;
-                                                                                    padding: 2rem 0;
-                                                                                    border: none;
-                                                                                    border-bottom: 1px solid var(--grayish-blue);
-                                                                                    background: none;
-                                                                                    background-image: url(/img/icon-arrow.svg);
-                                                                                    background-repeat: no-repeat;
-                                                                                    background-position: right;
-                                                                                    color: var(--very-dark-blue);
-                                                                                    font-size: 1.6rem;
-                                                                                    font-weight: 500;
-                                                                                }
-                                                                                .slide-btn h5 {
-                                                                                    font-size: 1.4rem;
-                                                                                }
-                                                                                .slide-btn:hover {
-                                                                                    cursor: pointer;
-                                                                                }
-                                                                                .active {
-                                                                                    transition: .2s;
-                                                                                    margin-bottom: 2rem;
-                                                                                }
-                                                                                .slide-content {
-                                                                                    padding: 0 2rem;
-                                                                                    overflow: hidden;
-                                                                                    max-height: 0px;
-                                                                                    transition: 0.2s ease-out;
-                                                                                    cursor: default;
-                                                                                    text-align: center;
-                                                                                    line-height: 1.5;
-                                                                                }
-                                                                                .more-info-btn button {
-                                                                                    padding: 1.4rem 1rem;
-                                                                                    background: var(--soft-blue);
-                                                                                    font-size: 1.6rem;
-                                                                                    color: white;
-                                                                                    font-weight: 500;
-                                                                                    border-radius: 1rem;
-                                                                                    margin-bottom: 5rem;
-                                                                                }
-                                                                                .contact-us {
-                                                                                    background-color: var(--soft-blue);
-                                                                                    padding: 4rem 3rem;
-                                                                                    text-align: center;
-                                                                                    color: white;
-                                                                                }
-                                                                                .contact-us h5 {
-                                                                                    font-size: 1.4rem;
-                                                                                    letter-spacing: .5rem;
-                                                                                    margin-bottom: 1rem;
-                                                                                }
-                                                                                .contact-us h4 {
-                                                                                    font-size: 2.2rem;
-                                                                                    margin-bottom: 3rem;
-                                                                                }
-                                                                                .contact-us-form {
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                    margin: 0 auto;
-                                                                                    width: 90%;
-                                                                                }
-                                                                                .email-input {
-                                                                                    padding: 2rem 1em;
-                                                                                    border-radius: .75rem;
-                                                                                    border: 0;
-                                                                                    margin-bottom: 2rem;
-                                                                                    font-size: 1.6rem;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                input.error {
-                                                                                    border: 2px solid red;
-                                                                                }
-                                                                                .submit-btn {
-                                                                                    padding: 2rem 1em;
-                                                                                    border-radius: .75rem;
-                                                                                    border: 0;
-                                                                                    background: var(--soft-red);
-                                                                                    font-size: 1.6rem;
-                                                                                    color: white;
-                                                                                    font-weight: 500;
-                                                                                }
-                                                                                footer {
-                                                                                    background: var(--very-dark-blue);
-                                                                                    text-align: center;
-                                                                                    padding: 5rem;
-                                                                                }
-                                                                                .footer-nav {
-                                                                                    margin-top: 2rem;
-                                                                                }
-                                                                                .footer-nav-list-item {
-                                                                                    padding: 1.5rem 0;
-                                                                                    text-transform: uppercase;
-                                                                                    color: white;
-                                                                                }
-                                                                                footer p {
-                                                                                    margin-bottom: 0;
-                                                                                    margin-top: 3rem;
-                                                                                    font-size: 1rem;
-                                                                                    color: rgba(86, 102, 167, 0.5);
-                                                                                }
-                                                                                footer .st0 {
-                                                                                    fill: white;
-                                                                                }
-                                                                                footer .st1 {
-                                                                                    fill: var(--soft-blue);
-                                                                                }
-                                                                            }
-                                                                            /*DESKTOP STYLES*/
-                                                                            
-                                                                            @media (min-width: 800px) {
-                                                                                body {
-                                                                                    margin: 0 7rem;
-                                                                                }
-                                                                                header {
-                                                                                    display: flex;
-                                                                                    align-items: center;
-                                                                                    margin-top: 1rem;
-                                                                                }
-                                                                                .nav-toggle {
-                                                                                    display: none;
-                                                                                }
-                                                                                .main-nav {
-                                                                                    display: flex;
-                                                                                    background: none;
-                                                                                    color: var(--very-dark-blue);
-                                                                                    margin-left: auto;
-                                                                                    padding-right: 2rem;
-                                                                                }
-                                                                                .main-nav-list {
-                                                                                    display: flex;
-                                                                                    text-transform: uppercase;
-                                                                                    font-size: 1.2rem;
-                                                                                    font-weight: 200;
-                                                                                    flex: 1;
-                                                                                }
-                                                                                .main-nav-list-item {
-                                                                                    border-top: solid white .5px;
-                                                                                    padding: 2rem 2.5rem;
-                                                                                    display: flex;
-                                                                                    align-items: center;
-                                                                                }
-                                                                                .main-nav-list-item button {
-                                                                                    background: var(--soft-red);
-                                                                                    color: white;
-                                                                                    cursor: pointer;
-                                                                                    padding: 1rem 2.5rem;
-                                                                                    border: none;
-                                                                                    border-radius: .5rem;
-                                                                                    box-shadow: 2px 2px 3px hsla(229, 31%, 21%, .2);
-                                                                                }
-                                                                                .hero-section {
-                                                                                    display: flex;
-                                                                                    flex-direction: row-reverse;
-                                                                                    flex-basis: 50%;
-                                                                                    align-items: center;
-                                                                                }
-                                                                                .hero-figure {
-                                                                                    margin-bottom: 8rem;
-                                                                                }
-                                                                                .hero-image {
-                                                                                    width: 100%;
-                                                                                }
-                                                                                .hero-text {
-                                                                                    width: 50%;
-                                                                                    padding-right: 3rem;
-                                                                                    padding-left: 1rem;
-                                                                                    text-align: left;
-                                                                                }
-                                                                                .background-shape-right {
-                                                                                    z-index: -2;
-                                                                                    position: absolute;
-                                                                                    width: 30%;
-                                                                                    height: 25vw;
-                                                                                    right: 0;
-                                                                                    top: 200px;
-                                                                                    background-color: var(--soft-blue);
-                                                                                    border-top-left-radius: 10rem;
-                                                                                    border-bottom-left-radius: 10rem;
-                                                                                }
-                                                                                .hero-text h1 {
-                                                                                    font-weight: 500;
-                                                                                    font-size: 3rem;
-                                                                                    color: var(--very-dark-blue);
-                                                                                    margin-bottom: 2rem;
-                                                                                }
-                                                                                p {
-                                                                                    font-weight: 400;
-                                                                                    color: var(--grayish-blue);
-                                                                                    line-height: 1.75;
-                                                                                    margin-bottom: 4rem;
-                                                                                }
-                                                                                .hero-btn-list {
-                                                                                    display: flex;
-                                                                                    flex-direction: row;
-                                                                                    justify-content: flex-start;
-                                                                                    flex-wrap: wrap;
-                                                                                    flex-basis: 50%;
-                                                                                    margin-bottom: 10rem;
-                                                                                }
-                                                                                .hero-btn {
-                                                                                    padding: 1.5rem 0;
-                                                                                    width: 14rem;
-                                                                                    background-color: rgb(236, 236, 236);
-                                                                                    border: none;
-                                                                                    border-radius: .4rem;
-                                                                                    font-weight: 500;
-                                                                                    box-shadow: 3px 3px 5px hsla(229, 31%, 21%, .2);
-                                                                                }
-                                                                                .hero-btn-list-item:first-child button {
-                                                                                    background-color: var(--soft-blue);
-                                                                                    color: white;
-                                                                                    margin-right: 1rem;
-                                                                                    margin-bottom: 1rem;
-                                                                                }
-                                                                                h3 {
-                                                                                    font-weight: 500;
-                                                                                    font-size: 2.5rem;
-                                                                                    color: var(--very-dark-blue);
-                                                                                    margin-bottom: 1rem;
-                                                                                }
-                                                                                .features {
-                                                                                    text-align: center;
-                                                                                    margin-bottom: 20rem;
-                                                                                }
-                                                                                .features-section {
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                }
-                                                                                .features-section-header {
-                                                                                    margin: 0 auto;
-                                                                                    width: 35%;
-                                                                                }
-                                                                                .features-nav {
-                                                                                    width: 60%;
-                                                                                    margin: 0 auto;
-                                                                                    margin-bottom: 7rem;
-                                                                                }
-                                                                                .features-nav-list {
-                                                                                    display: flex;
-                                                                                    flex-basis: 33%;
-                                                                                    justify-content: space-around;
-                                                                                    border-bottom: solid 1px hsl(229, 8%, 60%, .2);
-                                                                                }
-                                                                                .features-nav-list-item {
-                                                                                    display: flex;
-                                                                                }
-                                                                                .features-nav-list-item a {
-                                                                                    display: inline-block;
-                                                                                    padding: 2rem 0;
-                                                                                }
-                                                                                .feature-nav-active {
-                                                                                    color: var(--very-dark-blue);
-                                                                                }
-                                                                                .red-btm-border {
-                                                                                    border-bottom: 2px solid var(--soft-red);
-                                                                                }
-                                                                                .active-feature {
-                                                                                    display: flex;
-                                                                                    flex-direction: row;
-                                                                                    align-items: center;
-                                                                                    justify-content: center;
-                                                                                }
-                                                                                .active-feature-section {
-                                                                                    display: flex;
-                                                                                    flex-basis: 50%;
-                                                                                    align-items: center;
-                                                                                    margin-bottom: 20rem;
-                                                                                }
-                                                                                .active-feature-figure {
-                                                                                    display: flex;
-                                                                                    margin-right: 10rem;
-                                                                                }
-                                                                                .active-feature-figure img {
-                                                                                    width: 100%;
-                                                                                }
-                                                                                .active-feature-text {
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                    padding-right: 1rem;
-                                                                                    text-align: left;
-                                                                                    width: 40%;
-                                                                                }
-                                                                                .background-shape-left {
-                                                                                    z-index: -2;
-                                                                                    position: absolute;
-                                                                                    width: 40%;
-                                                                                    height: 25vw;
-                                                                                    left: 0;
-                                                                                    top: 1000px;
-                                                                                    background-color: var(--soft-blue);
-                                                                                    border-top-right-radius: 10rem;
-                                                                                    border-bottom-right-radius: 10rem;
-                                                                                }
-                                                                                .download {
-                                                                                    display: flex;
-                                                                                    justify-content: center;
-                                                                                    margin-bottom: 20rem;
-                                                                                }
-                                                                                .download-section {
-                                                                                    flex-direction: column;
-                                                                                    display: flex;
-                                                                                }
-                                                                                .download-section-header {
-                                                                                    align-self: center;
-                                                                                    flex-direction: column;
-                                                                                    text-align: center;
-                                                                                    width: 60%;
-                                                                                }
-                                                                                .browser-select {
-                                                                                    display: flex;
-                                                                                }
-                                                                                .browser-list {
-                                                                                    display: flex;
-                                                                                    width: 100%;
-                                                                                    justify-content: space-between;
-                                                                                }
-                                                                                .browser-list :nth-child(1) {
-                                                                                    top: 3.5rem;
-                                                                                }
-                                                                                .browser-list :nth-child(2) {
-                                                                                    top: 6rem;
-                                                                                }
-                                                                                .browser-list :last-child {
-                                                                                    top: 9.5rem;
-                                                                                }
-                                                                                .browser-list-item {
-                                                                                    position: relative;
-                                                                                    width: 25rem;
-                                                                                    text-align: center;
-                                                                                    border-radius: 1rem;
-                                                                                    box-shadow: 0px 2px 5px hsla(229, 31%, 21%, .1);
-                                                                                    padding: 2rem 0;
-                                                                                }
-                                                                                .browser-list-item img {
-                                                                                    margin: 1rem 0;
-                                                                                }
-                                                                                .bg-dots {
-                                                                                    width: 100%;
-                                                                                }
-                                                                                .browser-list-item h4 {
-                                                                                    font-size: 2rem;
-                                                                                    font-weight: 500;
-                                                                                    color: var(--very-dark-blue);
-                                                                                }
-                                                                                .browser-list-item button {
-                                                                                    padding: 2rem 2rem;
-                                                                                    margin: 0 2rem;
-                                                                                    width: 80%;
-                                                                                    background: var(--soft-blue);
-                                                                                    font-size: 1.2rem;
-                                                                                    color: white;
-                                                                                    font-weight: 500;
-                                                                                    border-radius: 1rem;
-                                                                                }
-                                                                                button:focus {
-                                                                                    outline: none;
-                                                                                }
-                                                                                .faq {
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                    width: 60%;
-                                                                                    margin: 0 auto;
-                                                                                }
-                                                                                .faq-section {
-                                                                                    text-align: center;
-                                                                                }
-                                                                                .faq-nav {
-                                                                                    margin-bottom: 4rem;
-                                                                                }
-                                                                                .slide-btn {
-                                                                                    width: 50%;
-                                                                                    text-align: left;
-                                                                                    padding: 2rem 0;
-                                                                                    border: none;
-                                                                                    border-bottom: 1px solid var(--grayish-blue);
-                                                                                    background: none;
-                                                                                    background-image: url(/img/icon-arrow.svg);
-                                                                                    background-repeat: no-repeat;
-                                                                                    background-position: right;
-                                                                                    color: var(--very-dark-blue);
-                                                                                    font-size: 1.6rem;
-                                                                                    font-weight: 500;
-                                                                                }
-                                                                                .slide-btn h5 {
-                                                                                    font-size: 1.4rem;
-                                                                                }
-                                                                                .slide-btn:hover {
-                                                                                    cursor: pointer;
-                                                                                }
-                                                                                .active {
-                                                                                    transition: .2s;
-                                                                                    margin-bottom: 2rem;
-                                                                                }
-                                                                                .slide-content {
-                                                                                    padding: 0 2rem;
-                                                                                    overflow: hidden;
-                                                                                    max-height: 0px;
-                                                                                    transition: 0.2s ease-out;
-                                                                                    cursor: default;
-                                                                                    text-align: left;
-                                                                                    line-height: 1.5;
-                                                                                }
-                                                                                .more-info-btn button {
-                                                                                    padding: 1.4rem 1rem;
-                                                                                    background: var(--soft-blue);
-                                                                                    font-size: 1.2rem;
-                                                                                    color: white;
-                                                                                    font-weight: 500;
-                                                                                    border-radius: 1rem;
-                                                                                    margin-bottom: 5rem;
-                                                                                }
-                                                                                .contact-us {
-                                                                                    background-color: var(--soft-blue);
-                                                                                    padding: 4rem 3rem;
-                                                                                    text-align: center;
-                                                                                    color: white;
-                                                                                }
-                                                                                .contact-us h5 {
-                                                                                    font-size: 1.4rem;
-                                                                                    letter-spacing: .5rem;
-                                                                                    margin-bottom: 1rem;
-                                                                                }
-                                                                                .contact-us h4 {
-                                                                                    font-size: 2.2rem;
-                                                                                    margin-bottom: 3rem;
-                                                                                }
-                                                                                .contact-us-form {
-                                                                                    display: flex;
-                                                                                    flex-direction: column;
-                                                                                    margin: 0 auto;
-                                                                                    width: 90%;
-                                                                                }
-                                                                                .email-input {
-                                                                                    padding: 2rem 1em;
-                                                                                    border-radius: .75rem;
-                                                                                    border: 0;
-                                                                                    margin-bottom: 2rem;
-                                                                                    font-size: 1.6rem;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                input.error {
-                                                                                    border: 2px solid red;
-                                                                                }
-                                                                                .submit-btn {
-                                                                                    padding: 2rem 1em;
-                                                                                    border-radius: .75rem;
-                                                                                    border: 0;
-                                                                                    background: var(--soft-red);
-                                                                                    font-size: 1.6rem;
-                                                                                    color: white;
-                                                                                    font-weight: 500;
-                                                                                }
-                                                                                footer {
-                                                                                    background: var(--very-dark-blue);
-                                                                                    text-align: center;
-                                                                                    padding: 5rem;
-                                                                                }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    font-family: 'Rubik', sans-serif;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100%;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: var(--grayish-blue);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+button,
+a,
+input {
+    cursor: pointer;
+}
+
+
+/* END OF RESET*/
+
+
+/*VARIABLES*/
+
+ :root {
+    --very-dark-blue: hsla(229, 31%, 21%);
+    --grayish-blue: hsl(229, 8%, 60%);
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+}
+
+
+/*GLOBAL STYLES*/
+
+header {
+    background: white;
+    display: flex;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    z-index: 10;
+}
+
+.st0 {
+    fill: var(--very-dark-blue);
+}
+
+.st1 {
+    fill: var(--soft-blue);
+}
+
+footer .st0 {
+    fill: white;
+}
+
+footer .st1 {
+    fill: var(--soft-blue);
+}
+
+
+/*MOBILE STYLES*/
+
+@media (max-width: 800px) {
+    .nav-logo-active {
+        fill: white;
+        transition: all .3s ease-in-out;
+    }
+    .nav-toggle-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-toggle {
+        z-index: 10;
+        margin-left: auto;
+        padding-right: 2rem;
+    }
+    .lock-scroll {
+        overflow: hidden;
+    }
+    .main-nav {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background: var(--very-dark-blue);
+        overflow-y: hidden;
+        transition: all 0.5s ease-in-out;
+        color: white;
+        opacity: 0;
+    }
+    .main-nav-list {
+        position: relative;
+        top: 10%;
+        width: 80%;
+        text-align: center;
+        margin: 3rem auto 5rem auto;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .main-nav-list-item {
+        border-top: solid white .5px;
+        padding: 2rem 0;
+    }
+    .main-nav-list-item button {
+        border: 2px solid white;
+        background: none;
+        border-radius: .5rem;
+        margin: 1rem auto 5rem auto;
+        padding: 2rem 0;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+    }
+    .main-nav-list-item button:hover {
+        background: hsla(0, 0%, 100%, .9);
+        color: var(--very-dark-blue);
+        cursor: pointer;
+    }
+    .social-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-grow: 1;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+    .social-list-item {
+        padding: 2rem;
+    }
+    .open {
+        height: 100%;
+        opacity: .9;
+    }
+    .hero-section {
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .hero-figure {
+        margin-bottom: 8rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-image {
+        z-index: -1;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .background-shape-right {
+        position: absolute;
+        z-index: -2;
+        width: 80%;
+        height: 60vw;
+        right: 0;
+        margin-top: 3rem;
+        background-color: var(--soft-blue);
+        border-top-left-radius: 10rem;
+        border-bottom-left-radius: 10rem;
+    }
+    .hero-text h1 {
+        font-weight: 500;
+        font-size: 3rem;
+        color: var(--very-dark-blue);
+        margin-bottom: 2rem;
+    }
+    main {
+        text-align: center;
+        margin: 0 2rem;
+    }
+    article {
+        margin-bottom: 5rem;
+    }
+    p {
+        font-weight: 400;
+        color: var(--grayish-blue);
+        line-height: 1.75;
+        margin-bottom: 4rem;
+    }
+    .hero-btn-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 2rem;
+        margin-bottom: 10rem;
+    }
+    .hero-btn {
+        padding: 1.5rem;
+        margin: 0 1rem;
+        background-color: lightgray;
+        border: none;
+        border-radius: .4rem;
+        width: 14rem;
+        font-weight: 500;
+        box-shadow: 3px 3px 5px hsla(229, 31%, 21%, .5);
+        ;
+    }
+    .hero-btn-list-item:first-child button {
+        background-color: var(--soft-blue);
+        color: white;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: var(--very-dark-blue);
+        margin-bottom: 1rem;
+    }
+    .features {
+        margin-bottom: 10rem;
+    }
+    .features-nav {
+        margin-bottom: 7rem;
+    }
+    .features-nav-list-item a {
+        display: inline-block;
+        width: 100%;
+        border-bottom: solid 1px hsl(229, 8%, 60%, .2);
+        padding: 2rem 0;
+    }
+    .features-nav-list-item:first-of-type {
+        border-top: solid 1px hsl(229, 8%, 60%, .2);
+    }
+    .feature-nav-active {
+        color: var(--very-dark-blue);
+    }
+    .red-btm-border {
+        position: relative;
+        border-top: none;
+        border-bottom: 2px solid var(--soft-red);
+        bottom: 0;
+    }
+    .active-feature {
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .active-feature-figure {
+        margin-bottom: 12rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .active-feature-figure img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .background-shape-left {
+        position: absolute;
+        z-index: -2;
+        width: 80%;
+        height: 60vw;
+        left: 0;
+        margin-top: 3rem;
+        background-color: var(--soft-blue);
+        border-top-right-radius: 10rem;
+        border-bottom-right-radius: 10rem;
+    }
+    .download {
+        margin-bottom: 10rem;
+    }
+    .browser-select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .browser-list {
+        width: 90%;
+    }
+    .browser-list-item {
+        text-align: center;
+        border-radius: 1rem;
+        box-shadow: 0px 2px 5px hsla(229, 31%, 21%, .1);
+        padding: 2rem 0;
+        margin-bottom: 4rem;
+    }
+    .browser-list-item img {
+        margin: 2rem 0;
+    }
+    .bg-dots {
+        width: 100%;
+    }
+    .browser-list-item h4 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--very-dark-blue);
+    }
+    .browser-list-item button {
+        padding: 2rem 2rem;
+        margin: 0 2rem;
+        width: 80%;
+        background: var(--soft-blue);
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 500;
+        border-radius: 1rem;
+    }
+    button:focus {
+        outline: none;
+    }
+    .faq-nav {
+        margin-bottom: 4rem;
+    }
+    .slide-btn {
+        width: 90%;
+        text-align: left;
+        padding: 2rem 0;
+        border: none;
+        border-bottom: 1px solid var(--grayish-blue);
+        background: none;
+        background-image: url(/img/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        color: var(--very-dark-blue);
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .slide-btn h5 {
+        font-size: 1.4rem;
+    }
+    .slide-btn:hover {
+        cursor: pointer;
+    }
+    .active {
+        transition: .2s;
+        margin-bottom: 2rem;
+    }
+    .slide-content {
+        padding: 0 2rem;
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.2s ease-out;
+        cursor: default;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .more-info-btn button {
+        padding: 1.4rem 1rem;
+        background: var(--soft-blue);
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 500;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+    }
+    .contact-us {
+        background-color: var(--soft-blue);
+        padding: 4rem 3rem;
+        text-align: center;
+        color: white;
+    }
+    .contact-us h5 {
+        font-size: 1.4rem;
+        letter-spacing: .5rem;
+        margin-bottom: 1rem;
+    }
+    .contact-us h4 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    .contact-us-form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .email-input {
+        padding: 2rem 1em;
+        border-radius: .75rem;
+        border: 0;
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    input.error {
+        border: 2px solid red;
+    }
+    .submit-btn {
+        padding: 2rem 1em;
+        border-radius: .75rem;
+        border: 0;
+        background: var(--soft-red);
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 500;
+    }
+    footer {
+        background: var(--very-dark-blue);
+        text-align: center;
+        padding: 5rem;
+    }
+    .footer-nav {
+        margin-top: 2rem;
+    }
+    .footer-nav-list-item {
+        padding: 1.5rem 0;
+        text-transform: uppercase;
+        color: white;
+    }
+    footer p {
+        margin-bottom: 0;
+        margin-top: 3rem;
+        font-size: 1rem;
+        color: rgba(86, 102, 167, 0.5);
+    }
+}
+
+
+/*DESKTOP STYLES*/
+
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        align-items: center;
+        margin: 1rem 10rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .main-nav {
+        display: flex;
+        background: none;
+        color: var(--very-dark-blue);
+        margin-left: auto;
+    }
+    .main-nav .social-list {
+        display: none;
+    }
+    .main-nav-list {
+        display: flex;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    .main-nav-list-item {
+        border-top: solid white .5px;
+        padding: 2rem 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+    .main-nav-list-item button {
+        background: var(--soft-red);
+        color: white;
+        cursor: pointer;
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: .5rem;
+        box-shadow: 2px 2px 3px hsla(229, 31%, 21%, .2);
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-basis: 50%;
+        align-items: center;
+        margin: 1rem 10rem;
+    }
+    .hero-figure {
+        margin-bottom: 8rem;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .hero-text {
+        width: 50%;
+        padding-right: 3rem;
+        padding-left: 1rem;
+        text-align: left;
+    }
+    .background-shape-right {
+        z-index: -2;
+        position: absolute;
+        width: 30%;
+        height: 25vw;
+        right: 0;
+        top: 200px;
+        background-color: var(--soft-blue);
+        border-top-left-radius: 10rem;
+        border-bottom-left-radius: 10rem;
+    }
+    .hero-text h1 {
+        font-weight: 500;
+        font-size: 3rem;
+        color: var(--very-dark-blue);
+        margin-bottom: 2rem;
+    }
+    p {
+        font-weight: 400;
+        color: var(--grayish-blue);
+        line-height: 1.75;
+        margin-bottom: 4rem;
+    }
+    .hero-btn-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        margin-bottom: 10rem;
+    }
+    .hero-btn {
+        padding: 1.5rem 0;
+        width: 14rem;
+        background-color: rgb(236, 236, 236);
+        border: none;
+        border-radius: .4rem;
+        font-weight: 500;
+        box-shadow: 3px 3px 5px hsla(229, 31%, 21%, .2);
+    }
+    .hero-btn-list-item:first-child button {
+        background-color: var(--soft-blue);
+        color: white;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: var(--very-dark-blue);
+        margin-bottom: 1rem;
+    }
+    main {
+        margin: 1rem 10rem;
+    }
+    .features {
+        text-align: center;
+        margin-bottom: 20rem;
+    }
+    .features-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .features-section-header {
+        margin: 0 auto;
+        width: 35%;
+    }
+    .features-nav {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 7rem;
+    }
+    .features-nav-list {
+        display: flex;
+        flex-basis: 33%;
+        justify-content: space-around;
+        border-bottom: solid 1px hsl(229, 8%, 60%, .2);
+    }
+    .features-nav-list-item {
+        display: flex;
+    }
+    .features-nav-list-item a {
+        display: inline-block;
+        padding: 2rem 0;
+    }
+    .feature-nav-active {
+        color: var(--very-dark-blue);
+    }
+    .red-btm-border {
+        border-bottom: 2px solid var(--soft-red);
+    }
+    .active-feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .active-feature-section {
+        display: flex;
+        flex-basis: 50%;
+        align-items: center;
+        margin-bottom: 20rem;
+    }
+    .active-feature-figure {
+        display: flex;
+        margin-right: 10rem;
+    }
+    .active-feature-figure img {
+        width: 100%;
+    }
+    .active-feature-text {
+        display: flex;
+        flex-direction: column;
+        padding-right: 1rem;
+        text-align: left;
+        width: 40%;
+    }
+    .background-shape-left {
+        z-index: -2;
+        position: absolute;
+        width: 40%;
+        height: 25vw;
+        left: 0;
+        top: 1000px;
+        background-color: var(--soft-blue);
+        border-top-right-radius: 10rem;
+        border-bottom-right-radius: 10rem;
+    }
+    .download {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20rem;
+    }
+    .download-section {
+        flex-direction: column;
+        display: flex;
+    }
+    .download-section-header {
+        align-self: center;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+    }
+    .browser-select {
+        display: flex;
+    }
+    .browser-list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .browser-list :nth-child(1) {
+        top: 3.5rem;
+    }
+    .browser-list :nth-child(2) {
+        top: 6rem;
+    }
+    .browser-list :last-child {
+        top: 9.5rem;
+    }
+    .browser-list-item {
+        position: relative;
+        width: 25rem;
+        text-align: center;
+        border-radius: 1rem;
+        box-shadow: 0px 2px 5px hsla(229, 31%, 21%, .1);
+        padding: 2rem 0;
+    }
+    .browser-list-item img {
+        margin: 1rem 0;
+    }
+    .bg-dots {
+        width: 100%;
+    }
+    .browser-list-item h4 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--very-dark-blue);
+    }
+    .browser-list-item button {
+        padding: 2rem 2rem;
+        margin: 0 2rem;
+        width: 80%;
+        background: var(--soft-blue);
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 500;
+        border-radius: 1rem;
+    }
+    button:focus {
+        outline: none;
+    }
+    .faq {
+        margin-bottom: 5rem;
+    }
+    .faq-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex: 0 10%;
+    }
+    .faq-section-header {
+        align-self: center;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+    }
+    .faq-nav {
+        margin-bottom: 3rem;
+    }
+    .slide-btn {
+        width: 50%;
+        text-align: left;
+        padding: 2rem 0;
+        border: none;
+        border-bottom: 1px solid var(--grayish-blue);
+        background: none;
+        background-image: url(/img/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        color: var(--very-dark-blue);
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .slide-btn h5 {
+        font-size: 1.4rem;
+    }
+    .slide-btn:hover {
+        cursor: pointer;
+    }
+    .active {
+        transition: .2s;
+        margin-bottom: 2rem;
+    }
+    .slide-content {
+        padding: 0 2rem;
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.2s ease-out;
+        cursor: default;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .more-info-btn button {
+        padding: 1.4rem 1rem;
+        background: var(--soft-blue);
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 500;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+    }
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--soft-blue);
+        padding: 4rem 3rem;
+        color: white;
+    }
+    .contact-header {
+        align-self: center;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+    }
+    .contact-us h5 {
+        font-size: 1.4rem;
+        letter-spacing: .5rem;
+        margin-bottom: 1rem;
+    }
+    .contact-us h4 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    .contact-us-form {
+        display: flex;
+        justify-content: center;
+    }
+    .email-input {
+        padding: 2rem 1em;
+        margin-right: 3rem;
+        border-radius: .75rem;
+        border: 0;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 35%
+    }
+    input.error {
+        border: 2px solid red;
+    }
+    .submit-btn {
+        padding: 2rem 1em;
+        border-radius: .75rem;
+        border: 0;
+        background: var(--soft-red);
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 500;
+        width: 15%;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        background: var(--very-dark-blue);
+        padding: 5rem 10rem;
+    }
+    footer svg {
+        margin-right: 3rem;
+        padding: 0;
+        margin-right: 5rem;
+    }
+    .footer-nav-list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-nav-list-item {
+        margin-right: 3rem;
+    }
+    .social-list {
+        display: flex;
+        margin-left: auto;
+        margin-right: 9rem;
+    }
+    .social-list li {
+        padding-left: 3rem;
+    }
+    .attribution {
+        text-align: center;
+        color: var(--very-dark-blue);
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 1rem 0;
+        height: 3rem;
+    }
+}
