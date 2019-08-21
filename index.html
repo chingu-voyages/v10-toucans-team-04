@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
 
 </head>
 
@@ -110,19 +109,21 @@
     <main>
         <article class="features">
             <section class="features-section">
-                <div class="section-header">
+                <div class="features-section-header">
                     <h3>Features</h3>
                     <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
 
                 <nav class="features-nav">
                     <ul class="features-nav-list">
-                        <li id="bookmark" class="features-nav-list-item feature-nav-active red-btm-border"><a>Simple Bookmarking</a></li>
+                        <li id="bookmark" class="features-nav-list-item feature-nav-active red-btm-border"><a>Simple Bookmarking</a>
+                        </li>
                         <li id="search" class="features-nav-list-item"><a>Speedy Searches</a></li>
                         <li id="share" class="features-nav-list-item"><a>Easy Sharing</a></li>
                     </ul>
                 </nav>
-
+            </section>
+            <section class="active-features-section">
                 <div class="active-feature">
                     <figure class="active-feature-figure">
                         <img src="/img/illustration-features-tab-1.svg" class="active-feature-img" id="active-feature-image">
@@ -131,14 +132,18 @@
                     <div class="active-feature-text">
                         <h3 id="active-class-heading">Bookmark in one click</h3>
                         <p id="active-class-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                        <div class="more-info-btn">
+                            <button>More Info</button>
+                        </div>
                     </div>
                 </div>
             </section>
+
         </article>
 
         <article class="download">
             <section class="download-section">
-                <div class="section-header">
+                <div class="download-section-header">
                     <h3>Download the Extension</h3>
                     <p>
                         We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
@@ -176,7 +181,7 @@
 
         <article class="faq">
             <section class="faq-section">
-                <div class="section-header">
+                <div class="faq-section-header">
                     <h3>Frequently Asked Questions</h3>
                     <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
                     </p>
@@ -223,16 +228,19 @@
                         </div>
                     </section>
                 </nav>
+                <div class="more-info-btn">
+                    <button>More Info</button>
+                </div>
             </section>
-            <div class="more-info-btn">
-                <button>More Info</button>
-            </div>
+
         </article>
     </main>
 
     <aside class="contact-us">
-        <h5>35,000+ already joined</h5>
-        <h4>Stay up-to-date with what we’re doing</h4>
+        <div class="contact-header">
+            <h5>35,000+ already joined</h5>
+            <h4>Stay up-to-date with what we’re doing</h4>
+        </div>
         <form class="contact-us-form">
             <label for="email" hidden>Email</label>
             <input required type="email" class="email-input" placeholder="your.eamil@here.com">
@@ -286,10 +294,11 @@
             </li>
         </ul>
 
-        <p class="attribution">
-            Desinged by Frontend Mentor</li>. Coded by V10 Toucans Team-04</a>.
-        </p>
+
     </footer>
+    <p class="attribution">
+        Desinged by Frontend Mentor</li>. Coded by V10 Toucans Team-04</a>.
+    </p>
 
     <script src="js/script.js" async defer></script>
     <script src="https://kit.fontawesome.com/5f8286bc0a.js"></script>
