@@ -526,6 +526,10 @@ footer .st1 {
 /*DESKTOP STYLES*/
 
 @media (min-width: 800px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
     header {
         display: flex;
         align-items: center;
@@ -588,6 +592,7 @@ footer .st1 {
         position: absolute;
         width: 30%;
         height: 25vw;
+        max-height: 25vw;
         right: 0;
         top: 200px;
         background-color: var(--soft-blue);
