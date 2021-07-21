@@ -1,5 +1,5 @@
-# v10-toucans-team-04
-### Build out a landing page and get it looking as close to the design (below) as possible.
+# The goal
+## Build out a landing page and get it looking as close to the design (below) as possible.
 
 
 **Users should be able to:**
